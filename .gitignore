@@ -22,3 +22,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive keys and documentation
+.env
+AGENTS.md
+
+# Ignore all other potential local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories (CRITICAL)
+node_modules/
+dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
