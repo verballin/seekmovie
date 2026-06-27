@@ -1,0 +1,139 @@
+.details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  border-color: var(--accent-green);
+  color: var(--text-main);
+}
+
+.details-backdrop {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  border: 1px solid var(--border-color);
+}
+
+.details-loading,
+.details-error {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.details-content {
+  display: flex;
+  gap: 40px;
+}
+
+.details-poster-col {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.details-poster-img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.details-info-col {
+  flex: 1;
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  color: var(--text-main);
+}
+
+.details-meta-row {
+  display: flex;
+  gap: 16px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.details-genres {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.genre-tag {
+  background-color: rgba(0, 121, 97, 0.15);
+  color: var(--accent-neon);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(0, 121, 97, 0.25);
+}
+
+.details-overview {
+  color: var(--text-main);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.details-info-col .favorite-btn {
+  background: rgba(26, 35, 46, 0.8);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.details-info-col .favorite-btn:hover {
+  background: var(--accent-neon);
+  color: #0c1017;
+  border-color: var(--accent-neon);
+}
+
+.details-info-col .favorite-btn.active {
+  background: #ff4a4a;
+  color: white;
+  border-color: #ff4a4a;
+}
+
+@media (max-width: 768px) {
+  .details-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-poster-col {
+    width: 200px;
+  }
+
+  .details-backdrop {
+    height: 180px;
+  }
+}

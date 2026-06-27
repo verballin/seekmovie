@@ -1,0 +1,36 @@
+:root {
+  --bg-main: #323437;
+  --bg-card: #2c433b;
+  --accent-green: #007961;
+  --accent-neon: #2bd9b4;
+  --accent-glow: rgba(65, 118, 108, 0.2);
+  --text-main: #ffffff;
+  --text-muted: #8a99a8;
+  --border-color: #263544;
+  --danger: #ff4a4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
